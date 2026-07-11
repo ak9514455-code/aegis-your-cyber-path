@@ -4,18 +4,18 @@ import { useReveal } from "@/hooks/use-reveal";
 const cards = [
   {
     icon: HelpCircle,
-    title: "Don't know where to start",
-    text: "You open Google and suddenly there are 100 things to learn. Networking, Linux, Python, tools. Nobody tells you what comes first.",
+    title: "Where do I even start?",
+    text: "You open Google, hit YouTube, join a Discord — and now there are 47 tabs open and 100 things to learn. Nobody tells you what actually comes first.",
   },
   {
     icon: Clock,
-    title: "No time to learn properly",
-    text: "You have 15 minutes between classes or after work. Every resource assumes you have hours to sit and study.",
+    title: "No time for a 6-hour course",
+    text: "You've got 15 minutes between classes or after work. Every course out there assumes you can sit down and grind for the whole weekend.",
   },
   {
     icon: Brain,
-    title: "Keep forgetting what you learned",
-    text: "You study something, feel good, come back a week later and it's all gone. No system. No structure.",
+    title: "It all falls out of my head",
+    text: "You learn something on Monday, feel great about it, and by Friday it's gone. No notes, no review, no way to build on it.",
   },
 ];
 
