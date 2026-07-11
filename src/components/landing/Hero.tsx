@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { WaitlistForm } from "./WaitlistForm";
-import { MockPathCard } from "./MockPathCard";
+import { AppPreview } from "./AppPreview";
 import { getWaitlistCount } from "@/lib/waitlist.functions";
 
 export function Hero() {
@@ -19,15 +19,16 @@ export function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-xs font-medium text-primary-glow">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary-glow" />
-            Now in private beta
+            Private beta · waitlist open
           </div>
-          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Cybersecurity is overwhelming.{" "}
-            <span className="text-gradient">Aegis makes it simple.</span>
+          <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
+            Learn cybersecurity in{" "}
+            <span className="text-gradient">10 minutes a day</span>
+            {" "}— without the overwhelm.
           </h1>
           <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-            A personal AI learning companion that builds your cybersecurity path, fits into 10 minutes
-            a day, and makes sure you never feel lost again.
+            Aegis is a small AI companion that gives you a real path — Networking, Linux, ethical hacking — in the right order,
+            one focused session at a time. Built by a learner who got tired of quitting courses.
           </p>
           <div id="waitlist" className="mt-8 max-w-xl">
             <WaitlistForm variant="hero" />
@@ -37,8 +38,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="lg:pl-4">
-          <MockPathCard />
+        <div className="lg:pl-2">
+          <AppPreview />
         </div>
       </div>
     </section>

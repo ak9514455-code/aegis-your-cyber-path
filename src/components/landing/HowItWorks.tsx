@@ -1,10 +1,10 @@
 import { useReveal } from "@/hooks/use-reveal";
 
 const steps = [
-  { n: "01", title: "Tell Aegis your level and goals" },
-  { n: "02", title: "Get your personal cybersecurity path" },
-  { n: "03", title: "Learn daily in bite sized sessions" },
-  { n: "04", title: "Never feel overwhelmed again" },
+  { n: "01", title: "Tell Aegis where you're at", desc: "5 quick questions about your level, goals, and how much time you actually have." },
+  { n: "02", title: "Get a path that makes sense", desc: "A step-by-step roadmap — Networking → Linux → Ethical Hacking — in the right order." },
+  { n: "03", title: "Learn in 10-minute sessions", desc: "One focused topic per day. Small enough to actually finish, big enough to add up." },
+  { n: "04", title: "Ask when you're stuck", desc: "Aegis remembers what you've learned and explains new stuff in words that connect to it." },
 ];
 
 export function HowItWorks() {
@@ -29,6 +29,7 @@ export function HowItWorks() {
                   {s.n}
                 </div>
                 <p className="font-display text-base font-semibold text-foreground">{s.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
               </li>
             ))}
           </ol>

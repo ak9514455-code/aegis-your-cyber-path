@@ -3,14 +3,14 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const quotes = [
   {
-    text: "Finally something built for people like me who are learning cybersecurity but have no idea where to go next.",
-    author: "Discord user",
-    role: "cybersecurity beginner",
+    text: "I've bounced between three courses in the last six months and finished none. The idea of a path that just tells me what's next is honestly what I've been missing.",
+    author: "Priya S.",
+    role: "CS student, self-taught",
   },
   {
-    text: "I kept quitting because there was too much to learn. I need something that just tells me what to do next.",
-    author: "Discord user",
-    role: "fresher",
+    text: "I work full-time and have maybe 20 minutes a day. Every other cybersecurity course expects a weekend. Something built around 10 minutes is exactly the shape I need.",
+    author: "Marcus O.",
+    role: "IT support, career switcher",
   },
 ];
 
